@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+//https://www.youtube.com/watch?v=SLfhMt5OUPI&ab_channel=WebDevSimplified
+
 import './App.css';
+import MainBanner from './Componentes/Header';
+import NavBar from './Componentes/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='banner01'>
+        <MainBanner />
+        <NavBar />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
